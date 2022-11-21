@@ -18,7 +18,7 @@ Author: chris.calo@gmail.com (Chris Calo)
       const response = ref(null);
       
       (async function () {
-        response.value = await api.get();
+        response.value = await api.get("UI");
       })();
       
       return {

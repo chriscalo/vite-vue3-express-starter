@@ -8,8 +8,9 @@ middleware.set("json spaces", 2);
 middleware.use(nocache());
 
 middleware.get("/api", (req, res) => {
+  const name = req.query.name ?? "friend";
   res.json({
-    message: "Hi!",
+    message: `Hello, ${name}!`,
     status: "OK",
   });
 });
