@@ -1,0 +1,34 @@
+{
+  "name": "vue3-vite-express-starter",
+  "version": "1.0.0",
+  "description": "A starter repo for Vue 3 + Vite + Express",
+  "author": "chris.calo@gmail.com (Chris Calo)",
+  "type": "module",
+  "workspaces": [
+    "api",
+    "ui"
+  ],
+  "scripts": {
+    "dev": "npm run dev:server",
+    "dev:server": "nodemon --signal SIGHUP server/start.js --watch server",
+    "start": "node server/start.js",
+    "build": "npm run build --workspace=ui"
+  },
+  "dependencies": {
+    "@repeaterjs/repeater": "^3.0.4",
+    "~": "file:.",
+    "2-thenable": "^1.0.0",
+    "app-root-path": "^3.0.0",
+    "caller": "^1.1.0",
+    "express": "^4.17.3",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "globby": "^13.1.1",
+    "hot-esm": "^1.4.1",
+    "kill-port": "^1.6.1",
+    "nodemon": "^2.0.15",
+    "pidtree": "^0.5.0",
+    "tree-kill": "^1.2.2"
+  }
+}

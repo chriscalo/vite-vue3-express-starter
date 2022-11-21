@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "build:dev": "__VUE_PROD_DEVTOOLS__=true vite build --mode=development --watch"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "sass": "^1.56.1",
+    "vite": "^3.2.4",
+    "vue": "^3.2.45"
+  },
+  "dependencies": {
+    "@vespaiach/axios-fetch-adapter": "^0.3.1",
+    "@vitejs/plugin-vue": "^3.2.0"
+  }
+}

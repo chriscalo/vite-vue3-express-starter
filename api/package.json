@@ -1,0 +1,8 @@
+{
+  "name": "api",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nocache": "^3.0.4"
+  }
+}
